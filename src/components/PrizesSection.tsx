@@ -3,21 +3,21 @@ import { Trophy, Star, Sparkles, Palette, Brain } from "lucide-react";
 const mainPrizes = [
   {
     place: "1st",
-    prize: "₹50,000",
+    prize: "REVEALING SOON",
     gradient: "from-yellow-400 via-amber-400 to-yellow-500",
     glowColor: "shadow-[0_0_60px_hsl(45_90%_55%_/_0.4)]",
     icon: Trophy,
   },
   {
     place: "2nd",
-    prize: "₹30,000",
+    prize: "REVEALING SOON",
     gradient: "from-slate-300 via-gray-300 to-slate-400",
     glowColor: "shadow-[0_0_60px_hsl(220_15%_70%_/_0.4)]",
     icon: Trophy,
   },
   {
     place: "3rd",
-    prize: "₹15,000",
+    prize: "REVEALING SOON",
     gradient: "from-orange-400 via-amber-600 to-orange-500",
     glowColor: "shadow-[0_0_60px_hsl(25_70%_50%_/_0.4)]",
     icon: Trophy,
@@ -27,19 +27,19 @@ const mainPrizes = [
 const specialPrizes = [
   {
     title: "Best Beginner Team",
-    prize: "₹10,000",
+    prize: "REVEALING SOON",
     icon: Star,
     description: "For first-time hackers showing exceptional potential",
   },
   {
     title: "Best UI/UX",
-    prize: "₹10,000",
+    prize: "REVEALING SOON",
     icon: Palette,
     description: "For the most beautiful and user-friendly design",
   },
   {
     title: "Best AI Project",
-    prize: "₹10,000",
+    prize: "REVEALING SOON",
     icon: Brain,
     description: "For innovative use of AI/ML technologies",
   },

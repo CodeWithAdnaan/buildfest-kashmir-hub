@@ -1,73 +1,87 @@
-# Welcome to your Lovable project
+# BuildFest Kashmir – Official Event Hub
 
-## Project info
+BuildFest Kashmir is a student-driven tech event designed to bring together young developers, creators, and problem-solvers from across Jammu & Kashmir. The event aims to promote innovation, collaboration, and community building by giving students a platform to create projects, showcase their skills, and learn from each other.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 📌 Event Description
 
-There are several ways of editing your application.
+BuildFest Kashmir is a beginner-friendly, project-based tech event where participants work individually or in teams to build something meaningful—websites, apps, tools, automations, or anything creative.  
+The goal is simple: **build, learn, and have fun.**
 
-**Use Lovable**
+Participants will get access to mentorship, resources, and a supportive community throughout the event.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Event Objectives
 
-**Use your preferred IDE**
+- Encourage innovation and hands-on learning among students in Kashmir  
+- Give young builders a platform to showcase their talent  
+- Promote teamwork, creativity, and problem-solving  
+- Help new developers get started with real projects  
+- Strengthen the local developer community
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧑‍🤝‍🧑 Who Can Participate?
 
-Follow these steps:
+BuildFest Kashmir is open to:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- School students  
+- College students  
+- Independent learners  
+- First-time developers  
+- Anyone passionate about building something new  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+No prior experience is required.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🏆 Event Tracks
 
-**Edit a file directly in GitHub**
+Participants can build projects in any of the following tracks:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Web Development  
+- Mobile Applications  
+- AI & Automation  
+- Open Innovation (Anything creative)  
+- Tools & Utilities  
+- Education & Community Impact  
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎁 Prizes & Recognition
 
-## What technologies are used for this project?
+- Certificates for all participants  
+- Digital badges  
+- Special recognition for outstanding projects  
+- Winners will be featured on our social channels  
+- Exclusive perks for selected projects  
 
-This project is built with:
+*(Note: Prizes may vary depending on partnerships.)*
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🗓️ Timeline
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- **Registrations Open:** To be announced  
+- **Build Period:** Continues throughout the event  
+- **Submission Deadline:** To be announced  
+- **Results Announcement:** After evaluation  
 
-## Can I connect a custom domain to my Lovable project?
+Updates will be posted on the website.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📮 Contact
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+For queries, collaboration, or partnership requests:  
+**adnanfarooq6969@gmail.com**
+
+---
+
+## 🌟 A Community-Driven Event
+
+BuildFest Kashmir is built by students for students.  
+Our vision is to inspire the next generation of creators in Kashmir and help them take their first step into the world of technology.
+
