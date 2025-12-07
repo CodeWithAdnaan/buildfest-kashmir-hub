@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MapPin } from "lucide-react";
 
@@ -88,6 +88,43 @@ const FloatingShapes = () => (
 );
 
 export const HeroSection = () => {
+  const applyButtonRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Wait for Devfolio SDK to load and initialize the button
+    const initDevfolioButton = () => {
+      // Check if Devfolio SDK is available
+      if ((window as any).Devfolio && applyButtonRef.current) {
+        // SDK will automatically initialize buttons with class 'apply-button'
+        // Force a re-scan if needed
+        try {
+          // Trigger Devfolio to re-scan for buttons
+          if ((window as any).Devfolio.init) {
+            (window as any).Devfolio.init();
+          }
+        } catch (error) {
+          console.log("Devfolio SDK initialization:", error);
+        }
+      }
+    };
+
+    // Check if SDK is already loaded
+    if ((window as any).Devfolio) {
+      initDevfolioButton();
+    } else {
+      // Wait for SDK to load
+      const checkInterval = setInterval(() => {
+        if ((window as any).Devfolio) {
+          clearInterval(checkInterval);
+          initDevfolioButton();
+        }
+      }, 100);
+
+      // Stop checking after 5 seconds
+      setTimeout(() => clearInterval(checkInterval), 5000);
+    }
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden mesh-gradient">
       <FloatingShapes />
@@ -138,10 +175,21 @@ export const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <Button variant="hero" size="xl">
-              Apply Now
-              <ArrowRight size={20} />
-            </Button>
+            {/* Devfolio Apply Button */}
+            <div className="w-full sm:w-auto flex justify-center">
+              <div 
+                ref={applyButtonRef}
+                className="apply-button"
+                data-hackathon-slug="buildfestkashmir"
+                data-button-theme="light"
+                style={{ 
+                  height: "44px", 
+                  width: "312px",
+                  maxWidth: "100%",
+                  minWidth: "280px"
+                }}
+              ></div>
+            </div>
             <Button variant="heroOutline" size="xl">
               View Schedule
             </Button>
@@ -158,17 +206,19 @@ export const HeroSection = () => {
           {/* Partner Logos */}
           <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <p className="text-xs text-muted-foreground uppercase tracking-widest mb-6">
-              Community Partners
+              Powered By
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-8 opacity-50">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div
-                  key={i}
-                  className="w-24 h-12 bg-muted/30 rounded-lg flex items-center justify-center text-muted-foreground text-xs"
-                >
-                  Partner {i}
-                </div>
-              ))}
+            <div className="partner-logos flex flex-wrap items-center justify-center gap-6 md:gap-8">
+              <img 
+                src="/assets/devfolio-logo.png" 
+                alt="Devfolio Logo" 
+                className="h-10 md:h-12 object-contain opacity-80 hover:opacity-100 transition-opacity" 
+              />
+              <img 
+                src="/assets/hackclub-logo.png" 
+                alt="Hack Club Logo" 
+                className="h-10 md:h-12 object-contain opacity-80 hover:opacity-100 transition-opacity" 
+              />
             </div>
           </div>
         </div>

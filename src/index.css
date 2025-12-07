@@ -228,3 +228,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary));
 }
+
+/* Devfolio Apply Button Responsive Styles */
+@media (max-width: 640px) {
+  .apply-button {
+    width: 100% !important;
+    min-width: 280px !important;
+  }
+  
+  .apply-button iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
