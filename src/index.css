@@ -241,3 +241,38 @@
     max-width: 100% !important;
   }
 }
+
+/* Devfolio Modal Fix - Ensure popup appears above all elements */
+.devfolio-apply-iframe,
+iframe[src*="devfolio"],
+iframe[src*="apply.devfolio"] {
+  z-index: 999999 !important;
+  position: relative !important;
+}
+
+/* Devfolio modal overlay - must be above everything */
+div[class*="devfolio"],
+div[id*="devfolio"] {
+  z-index: 999998 !important;
+}
+
+/* Ensure body doesn't block scrolling when Devfolio modal is open */
+body.devfolio-modal-open {
+  overflow: visible !important;
+}
+
+/* Global fix for any modal/popup overlays from Devfolio */
+[class*="devfolio-modal"],
+[class*="devfolio-popup"],
+[id*="devfolio-modal"],
+[id*="devfolio-popup"] {
+  z-index: 999999 !important;
+  pointer-events: auto !important;
+}
+
+/* Ensure iframes within Devfolio elements are fully interactive */
+[class*="devfolio"] iframe,
+[id*="devfolio"] iframe {
+  pointer-events: auto !important;
+  z-index: 999999 !important;
+}

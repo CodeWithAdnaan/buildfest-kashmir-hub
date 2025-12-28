@@ -66,22 +66,22 @@ const CountdownTimer = () => {
 
 // Floating geometric shapes for background
 const FloatingShapes = () => (
-  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    <div className="absolute top-1/4 left-10 w-20 h-20 border border-primary/20 rounded-full animate-float" />
+  <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="absolute top-1/4 left-10 w-20 h-20 border border-primary/20 rounded-full animate-float pointer-events-none" />
     <div
-      className="absolute top-1/3 right-20 w-32 h-32 border border-primary/10 rotate-45 animate-float"
+      className="absolute top-1/3 right-20 w-32 h-32 border border-primary/10 rotate-45 animate-float pointer-events-none"
       style={{ animationDelay: "1s" }}
     />
     <div
-      className="absolute bottom-1/4 left-1/4 w-16 h-16 bg-primary/5 rounded-lg rotate-12 animate-float"
+      className="absolute bottom-1/4 left-1/4 w-16 h-16 bg-primary/5 rounded-lg rotate-12 animate-float pointer-events-none"
       style={{ animationDelay: "2s" }}
     />
     <div
-      className="absolute top-1/2 right-1/4 w-24 h-24 border border-primary/15 rounded-2xl animate-float"
+      className="absolute top-1/2 right-1/4 w-24 h-24 border border-primary/15 rounded-2xl animate-float pointer-events-none"
       style={{ animationDelay: "1.5s" }}
     />
     <div
-      className="absolute bottom-1/3 right-10 w-12 h-12 bg-primary/10 rotate-45 animate-float"
+      className="absolute bottom-1/3 right-10 w-12 h-12 bg-primary/10 rotate-45 animate-float pointer-events-none"
       style={{ animationDelay: "0.5s" }}
     />
   </div>
@@ -126,12 +126,12 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden mesh-gradient">
+    <section className="relative min-h-screen flex items-center justify-center overflow-visible mesh-gradient">
       <FloatingShapes />
       
       {/* Grid pattern overlay */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.02] pointer-events-none z-0"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px),
                            linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
