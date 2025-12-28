@@ -176,19 +176,28 @@ export const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-slide-up" style={{ animationDelay: "0.3s" }}>
             {/* Devfolio Apply Button */}
-            <div className="w-full sm:w-auto flex justify-center">
+            <div className="w-full sm:w-auto flex justify-center relative z-50">
               <div 
                 ref={applyButtonRef}
-                className="apply-button"
-                data-hackathon-slug="buildfestkashmir"
-                data-button-theme="light"
-                style={{ 
-                  height: "44px", 
-                  width: "312px",
-                  maxWidth: "100%",
-                  minWidth: "280px"
-                }}
-              ></div>
+                className="relative z-50"
+                style={{ pointerEvents: "auto" }}
+              >
+                <button
+                  className="apply-button"
+                  data-hackathon-slug="buildfest-kashmir"
+                  data-button-theme="light"
+                  style={{ 
+                    height: "44px", 
+                    width: "250px",
+                    fontSize: "16px",
+                    cursor: "pointer",
+                    position: "relative",
+                    zIndex: 50
+                  }}
+                >
+                  Apply with Devfolio
+                </button>
+              </div>
             </div>
             <Button variant="heroOutline" size="xl">
               View Schedule
